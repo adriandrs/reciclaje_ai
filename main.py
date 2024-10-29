@@ -6,6 +6,11 @@ import cv2
 import numpy as np
 from ultralytics import YOLO
 import math
+import tensorflow as tf
+
+# Check if TensorFlow is using the GPU
+print(tf.test.is_gpu_available())
+print(tf.test.gpu_device_name())
 
 def clean_lbl():
     # Clean
